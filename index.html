@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img_center">
+        <div class="img_left">
+          <div class="header">
+            <p class="p">Photoshop</p>
+            <img src="./img/father.png" alt="" class="feather" />
+          </div>
+          <div class="img_list_top">
+            <img src="./img/2f5a4e97e1874ed917969.jpg" alt="" class="img1 b" />
+            <img src="./img/43f0a82a073aa864f12b8.jpg" alt="" class="img1 b" />
+          </div>
+          <div class="img_list_bottom">
+            <img src="./img/6a3f28d787c7289971d67.jpg" alt="" class="img2 b" />
+            <img src="./img/6d136fd1c0c16f9f36d010.jpg" alt="" class="imgg b" />
+          </div>
+        </div>
+
+        <div class="img_right">
+          <div class="img_center_right">
+            <div class="imgcenter">
+              <img alt="" class="mm" src="./img/2f5a4e97e1874ed917969.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var $ = document.querySelector.bind(document);
+      var $$ = document.querySelectorAll.bind(document);
+      var img = "";
+      $$(".b").forEach((element) => {
+        element.addEventListener("click", (e) => {
+          $(".mm").src = e.target.currentSrc;
+        });
+      });
+      console.log($$(".b"));
+      // $$(".img1").forEach((e) => {
+      //   e.addEventListener("click", (ee) => {
+      //     ee.target.style.opacity = 0.5;
+      //   });
+      // });
+      // $$(".img1").forEach((e) => {
+      //   e.addEventListener("mouseover", (ee) => {
+      //     ee.target.style.transform = "scale(1.2)";
+      //     if ((ee.target.style.transform = "scale(1.2)")) {
+      //       ee.target.style.transform = "scale(1.2)";
+      //     }
+      //   });
+      // });
+    </script>
+  </body>
+</html>
